@@ -1,5 +1,5 @@
-{
-  "name": "portfolio-reactjs",
+{  "name": "portfolio-reactjs",
+  "homepage": "https://elvanunal.github.io/porfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +38,6 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  }
+  },
+  "deploy": "npm run build && gh-pages -b master -d build"
 }
